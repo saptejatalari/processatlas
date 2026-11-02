@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Process Atlas · SAP explained visually</title>
+<meta name="description" content="Free MM-FI Posting Cheat Sheet: what SAP posts in accounting when goods and invoices move. Independent SAP education by Process Atlas.">
+<meta property="og:title" content="The MM-FI Posting Cheat Sheet (free)">
+<meta property="og:description" content="What SAP posts in accounting when goods and invoices move, in four pages.">
+<meta property="og:image" content="guide-preview.png">
+<link rel="icon" href="avatar.png">
+<style>
+  @font-face { font-family: "Brico"; src: url("fonts/BricolageGrotesque-VF.ttf"); font-weight: 200 800; font-display: swap; }
+  @font-face { font-family: "Bodoni"; src: url("fonts/BodoniModa-Italic-VF.ttf"); font-weight: 400 900; font-style: italic; font-display: swap; }
+  @font-face { font-family: "Plex"; src: url("fonts/IBMPlexMono-SemiBold.ttf"); font-weight: 600; font-display: swap; }
+  :root { --ivory:#F4F0E7; --graphite:#141413; --warm:#3A3934; --taupe:#827F76; --line:#D6D0C3; --peach:#E7B393; --sage:#B5C69D; --card:#FBF9F4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Brico", system-ui, sans-serif; color: var(--graphite); background-color: var(--ivory);
+         background-image: linear-gradient(to right, #EAE4D8 1px, transparent 1px), linear-gradient(to bottom, #EAE4D8 1px, transparent 1px);
+         background-size: 36px 36px; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { display: flex; align-items: center; gap: 14px; }
+  header img { width: 56px; height: 56px; border-radius: 50%; }
+  .brand { font-weight: 600; font-size: 20px; }
+  .tag { font-family: "Plex"; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--warm); }
+  h1 { font-weight: 600; font-size: clamp(36px, 7vw, 56px); line-height: 1.02; letter-spacing: -.02em; margin: 48px 0 16px; }
+  h1 em { font-family: "Bodoni"; font-style: italic; font-weight: 500; background: linear-gradient(transparent 68%, var(--peach) 68% 96%, transparent 96%); padding: 0 .06em; }
+  p { font-size: 18px; line-height: 1.55; color: var(--warm); }
+  .card { background: var(--card); border: 1.5px solid var(--line); border-radius: 18px; padding: 22px; margin: 24px 0; box-shadow: 0 8px 24px rgba(20,20,19,.07); display: grid; grid-template-columns: 180px 1fr; gap: 22px; align-items: center; }
+  .card img { width: 100%; border-radius: 8px; border: 1px solid var(--line); }
+  ul { padding-left: 20px; margin: 8px 0 16px; } li { margin: 6px 0; color: var(--warm); font-size: 16px; }
+  .btn { display: inline-block; background: var(--graphite); color: var(--ivory); text-decoration: none; font-weight: 600; font-size: 17px; padding: 14px 22px; border-radius: 12px; }
+  .btn.alt { background: transparent; color: var(--graphite); border: 1.5px solid var(--graphite); margin-left: 8px; }
+  .small { font-size: 13px; color: var(--taupe); line-height: 1.5; }
+  footer { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 18px; }
+  @media (max-width: 560px) { .card { grid-template-columns: 1fr; } .btn.alt { margin: 10px 0 0; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="avatar.png" alt="Process Atlas logo">
+    <div><div class="brand">Process Atlas</div><div class="tag">SAP explained visually</div></div>
+  </header>
+
+  <h1>The MM-FI <em>Posting</em> Cheat Sheet</h1>
+  <p>What SAP posts in accounting when goods and invoices move, in four pages. Free, no sign-up.</p>
+
+  <section class="card">
+    <img src="guide-preview.png" alt="First page of the MM-FI Posting Cheat Sheet">
+    <div>
+      <ul>
+        <li>The transaction keys BSX, WRX and PRD</li>
+        <li>Goods receipt postings: moving average vs standard price</li>
+        <li>Invoice price differences and what a GR/IR balance means</li>
+        <li>SAP's invoice-before-goods-receipt example, worked through</li>
+        <li>GR/IR clean-up and where it all lands in ACDOCA</li>
+      </ul>
+      <a class="btn" href="mm-fi-posting-cheat-sheet.pdf" download>Download the PDF</a>
+      <a class="btn alt" href="https://www.instagram.com/processatlas/" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+  <p>Every claim is checked against SAP Help, SAP Best Practices or SAP Learning, with sources on each page. Numbers are illustrative unless marked as SAP's example.</p>
+
+  <footer>
+    <p class="small"><b>Independent educational content. Not affiliated with, endorsed or sponsored by SAP SE.</b> SAP, S/4HANA and other SAP product names are trademarks of SAP SE, used here only to refer to the products.</p>
+    <p class="small">Privacy: this page sets no cookies and uses no analytics or tracking. It is hosted on GitHub Pages; GitHub may process technical data such as your IP address to deliver the page (see GitHub's privacy statement). Fonts are served from this site (SIL Open Font License).</p>
+  </footer>
+</main>
+</body>
+</html>
